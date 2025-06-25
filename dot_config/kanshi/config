@@ -1,0 +1,19 @@
+# When your external monitor is connected, turn it on and disable the laptop panel
+profile docked2 {
+    output HDMI-A-1 enable
+    output eDP-1 disable
+    exec hyprctl dispatch workspace 1
+}
+
+profile docked2 {
+    output DP-1 enable
+    output eDP-1 disable
+    exec hyprctl dispatch workspace 1
+}
+# Fallback when only the laptop panel remains: re-enable it at its default mode
+profile undocked {
+    output eDP-1 enable
+    exec hyprctl dispatch workspace 1
+}
+
+
