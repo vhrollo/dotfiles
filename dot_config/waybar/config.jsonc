@@ -24,6 +24,7 @@
     ],
     "modules-right": [
         "network",
+        "custom/language",
         "pulseaudio",
         "bluetooth",
         //"backlight",
@@ -254,6 +255,12 @@
             "activated": "",
             "deactivated": ""
         }
+    },
+    "custom/language": {
+        "format": " {}",
+        "exec": "~/scripts/get_kb_layout.sh",
+        "interval": 1,
+        "on-click": "hyprctl switchxkblayout all next",
     },
     "custom/weather": {
         "tooltip": true,

@@ -73,6 +73,7 @@
 #battery,
 #pulseaudio,
 #network,
+#custom-language,
 #mpd,
 #cpu,
 #memory,
@@ -309,6 +310,17 @@
 
 /* =============================== */
 
+/* =============================== */
+/* Language Module */
+#custom-language {
+  color: @blue;
+  border-radius: 0;
+  margin-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* =============================== */
 
 /* =============================== */
 /* PulseAudio Module */
